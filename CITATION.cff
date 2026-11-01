@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Content-Style Consistent Diffusion for Cross-Domain Image Composition"
+authors:
+  - family-names: "Si"
+    given-names: "Qi"
+  - family-names: "Zhang"
+    given-names: "Zhao"
+  - family-names: "Zhao"
+    given-names: "Yang"
+  - family-names: "Zhao"
+    given-names: "Zhongqiu"
+  - family-names: "Zhang"
+    given-names: "Haijun"
+  - family-names: "Wang"
+    given-names: "Meng"
+year: 2026
+repository-code: "https://github.com/sqsiqi/CSCD"
+url: "https://github.com/sqsiqi/CSCD"

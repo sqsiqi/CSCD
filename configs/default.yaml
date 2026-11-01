@@ -1,0 +1,44 @@
+# Default configuration used in the paper.
+# Model paths are intentionally left empty; pass them on the command line or
+# set them to your local checkpoint directories.
+model:
+  sdxl: ""
+  ip_adapter: ""
+  vgg19: ""
+  clip: "openai/clip-vit-large-patch14"
+
+sampling:
+  num_steps: 20
+  inversion_stop: 10
+  guidance_scale: 7.5
+  seed: 3407
+
+iawvg:
+  alpha: 0.9
+  beta: 0.0
+
+afsa:
+  eps: 1.0e-6
+  alpha_t_mid: 0.10
+  alpha_t_high: 0.05
+
+sslo:
+  t_start: 14
+  t_end: 18
+  eta: 0.05
+  steps: 3
+  lambda_sty: 1.0
+  lambda_sem: 0.5
+  vgg_layers: [1, 6, 11, 20, 29]
+
+bdth:
+  tau_g: 0.60
+  tau_s: 0.25
+  tau_c: 0.05
+  tau_e: 0.10
+  tau_g_plus: 0.80
+  tau_s_minus: 0.175
+  tau_c_minus: 0.035
+  delta: 0.035
+  soft_mask_kernel: 5
+  beta_lh: 1.0

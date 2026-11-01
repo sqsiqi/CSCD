@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Model weights and checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Data and outputs
+data/
+datasets/
+outputs/
+results/
+*.log
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+
+# Local secrets
+*.token
+secrets/
