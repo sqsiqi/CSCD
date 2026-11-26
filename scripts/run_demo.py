@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run CSCD on a single sample.
 
-The core stages are withheld before paper acceptance. Use ``--prepare-only`` to
+The core stages are withheld in the current release. Use ``--prepare-only`` to
 exercise the released data, mask, and pixel-composition code without model
 weights.
 """

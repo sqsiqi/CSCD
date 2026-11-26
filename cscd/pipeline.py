@@ -2,7 +2,7 @@
 
 The released code covers model loading, mask preparation, pixel composition,
 and the stage interface. The core stages are imported from :mod:`cscd.core`
-and are withheld until paper acceptance.
+and are withheld in the current release.
 """
 
 from __future__ import annotations
@@ -119,7 +119,7 @@ class CSCDPipeline:
         2. AFSA transfers background statistics to foreground tokens.
         3. SSLO refines the latent in a narrow denoising window.
         4. BDTH corrects residual tone mismatch after decoding.
-        5. PSBF restores the original background outside the insertion mask.
+        5. PSBF restores the original background outside the fusion mask M_d.
 
         The core implementations are temporarily withheld; calling this method
         raises ``NotImplementedError`` with a clear message.
@@ -137,10 +137,10 @@ class CSCDPipeline:
         #   2. AFSA transfers background statistics to foreground tokens.
         #   3. SSLO refines the latent in a narrow denoising window.
         #   4. BDTH corrects residual tone mismatch after decoding.
-        #   5. PSBF restores the original background outside the insertion mask.
+        #   5. PSBF restores the original background outside the fusion mask M_d.
         raise NotImplementedError(
             "The core CSCD stages (IAWVG, AFSA, SSLO, BDTH, PSBF) are "
-            "temporarily withheld and will be released upon paper acceptance. "
+            "temporarily withheld and will be released separately. "
             "The released code already provides data loading, mask "
-            "preparation, pixel composition, inversion, and evaluation."
+            "preparation, pixel composition, and inversion."
         )

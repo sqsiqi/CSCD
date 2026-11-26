@@ -1,14 +1,14 @@
 """Core modules of CSCD.
 
-These functions are intentionally withheld before paper acceptance. The
+These functions are intentionally withheld in the current release. The
 signatures below document the interface used by :class:`cscd.pipeline.CSCDPipeline`
-so that the released data, inversion, and evaluation code can be integrated
-with the full implementation once it is available.
+so that the released data, inversion, and pipeline code can be integrated with
+the full implementation once it is available.
 """
 
 _MESSAGE = (
     "The core CSCD modules are temporarily withheld and will be released "
-    "upon paper acceptance. See the README for the released components."
+    "separately. See the README for the released components."
 )
 
 

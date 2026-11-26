@@ -1,16 +1,17 @@
-# CSCD: Content-Style Consistent Diffusion for Cross-Domain Image Composition
+# Content-Style Consistent Diffusion for Cross-Domain Image Composition
 
 <a href='https://github.com/sqsiqi/CSCD'><img src='https://img.shields.io/badge/Code-GitHub-blue'></a>
-<a href='#'><img src='https://img.shields.io/badge/Paper-Coming%20Soon-red'></a>
+<img src='https://img.shields.io/badge/Paper-Final%20version-brightgreen'>
 
 <p align="center">
   <img src="assets/teaser.png" width="95%">
 </p>
 
-CSCD is a training-free framework for cross-domain image composition. Given a
-reference object and a target background from a different visual domain, it
-inserts the object so that it looks native to the scene, remains recognizable,
-and leaves the background unchanged.
+**Content-Style Consistent Diffusion (CSCD)** is a training-free framework for
+cross-domain image composition. Given a reference object and a target
+background from a different visual domain, it inserts the object so that it
+looks native to the scene, remains recognizable, and preserves the original
+background outside the fusion mask.
 
 The method separates the composition constraints and enforces each one in the
 representation where it is best defined: identity in foreground-restricted
@@ -25,11 +26,10 @@ all goals in a single latent representation.
 
 ## News
 
-- **Code release (pre-submission).** This repository currently provides the data
-  interface, model loading, inversion, and a runnable
-  pipeline skeleton. The core modules (IAWVG, AFSA, SSLO, BDTH, and PSBF) are
-  temporarily withheld and will be released upon paper acceptance.
-- The paper is under review. The arXiv/paper link will be added here.
+- **Code release.** This repository provides the data interface, model loading,
+  inversion, and a runnable pipeline skeleton. The core modules (IAWVG, AFSA,
+  SSLO, BDTH, and PSBF) are temporarily withheld and will be released separately.
+- This repository accompanies the final version of the paper.
 
 ## Installation
 
@@ -84,8 +84,9 @@ python scripts/run_demo.py \
 
 The demo loads the models, prepares the masks, builds the initial blend, and
 runs the pipeline. Until the core modules are released, the pipeline stops at
-`cscd/core/` with a clear message. The data interface, inversion, and
-post-processing utilities are fully available.
+`cscd/core/` with a clear message. The data interface, mask preparation, pixel
+composition, and inversion code are fully available; the five core stages remain
+withheld.
 
 The configuration used in the paper is in `configs/default.yaml`.
 
@@ -104,13 +105,11 @@ If you find this work useful, please cite:
 ```bibtex
 @article{si2026cscd,
   title   = {Content-Style Consistent Diffusion for Cross-Domain Image Composition},
-  author  = {Si, Qi and Zhang, Zhao and Zhao, Yang and Zhao, Zhongqiu and Zhang, Haijun and Wang, Meng},
-  journal = {arXiv preprint},
-  year    = {2026}
+  author  = {Si, Qi and Xia, Wenyue and Zhang, Zhao and Zhao, Yang and Zhao, Zhongqiu and Zhang, Haijun and Xu, Mingliang},
+  year    = {2026},
+  note    = {Final version}
 }
 ```
-
-The entry will be updated when the paper is available.
 
 ## Acknowledgments
 
